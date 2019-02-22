@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Dialog from '@material-ui/core/Dialog'
 import DialogTitle from '@material-ui/core/DialogTitle'
 import Button from '@material-ui/core/Button'
+import DefaultButton from './default-button'
 //import Button, { ButtonProps } from '@material-ui/core/Button'
 
 class Popup extends Component {
@@ -15,12 +16,10 @@ class Popup extends Component {
         <DialogTitle id="simple-dialog-title">Set backup account</DialogTitle>
         <div style={{ display: 'inline-flex' }}>
             <div>
-              <Button color="default" >
-                Default
-              </Button>
+              <DefaultButton></DefaultButton>
             </div>
             <div style={{ alignSelf: 'center' }}>
-              <Button {...inputProps} >
+              <Button color="default" >
                 Default
               </Button>
             </div>
@@ -28,6 +27,8 @@ class Popup extends Component {
       </Dialog>
     )
     /*
+
+
         <div role="dialog" className="MuiModal-root-15 MuiDialog-root-1" aria-labelledby="simple-dialog-title">
           <div className="MuiBackdrop-root-17" aria-hidden="true" >
           </div>
