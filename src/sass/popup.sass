@@ -1,80 +1,29 @@
-.MuiModal-root-15
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: 1300
-    position: fixed
+#single-form-layout
+    height: 100vh
+    .input-container
+        display: flex
+        justify-content: center
+        position: relative
+        .error-msg
+            position: absolute
+            bottom: -5px
+            color: $red
+            font-size: 12px
+            display: none
+        &.invalid
+            color: $red
+            border-color: $red
+            label
+                color: inherit
+            div
+                color: inherit
+                border-color: inherit
+                &::before
+                    border-color: inherit
+            .error-msg
+                display: block
+            .hint-msg
+                display: none
 
-.MuiBackdrop-root-17 
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    z-index: -1
-    position: fixed
-    touch-action: none
-    background-color: rgba(0, 0, 0, 0.5)
-    -webkit-tap-highlight-color: transparent
-    opacity: 1
-    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
-
-.MuiDialog-container-4 
-    height: 100%
-    outline: none
-    opacity: 1
-    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms
-
-
-.MuiDialog-scrollPaper-2 
-    display: flex
-    align-items: center
-    justify-content: center
-    
-
-.MuiDialog-paperWidthSm-9 
-    max-width: 600px
-    width: 400px
-
-
-.MuiDialog-paperScrollPaper-6 
-    flex: 0 1 auto
-    max-height: calc(100% - 96px)
-
-
-.MuiDialog-paper-5 
-    margin: 48px
-    display: flex
-    position: relative
-    overflow-y: auto
-    flex-direction: column
-
-
-.MuiPaper-elevation24-45 
-    box-shadow: 0px 11px 15px -7px rgba(0,0,0,0.2), 0px 24px 38px 3px rgba(0,0,0,0.14), 0px 9px 46px 8px rgba(0,0,0,0.12)
-
-
-.MuiPaper-rounded-20 
-    border-radius: 4px
-
-
-.MuiPaper-root-19 
-    background-color: #fff
-
-
-.MuiDialogTitle-root-46 
-    flex: 0 0 auto
-    margin: 0
-    padding: 24px 24px 20px
-            
-
-.MuiTypography-title-53 
-    color: rgba(0, 0, 0, 0.87)
-    font-size: 1.3125rem
-    font-weight: 500
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif
-    line-height: 1.16667em
-
-.MuiTypography-root-47
-    margin: 0
-    display: block
+    .actions
+        justify-content: space-around
